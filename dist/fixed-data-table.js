@@ -4649,7 +4649,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      'div',
 	      {
 	        style: style,
-	        className: cx('fixedDataTableRowLayout/rowWrapper') },
+	        className: joinClasses(cx('fixedDataTableRowLayout/rowWrapper'), this.props.className) },
 	      React.createElement(FixedDataTableRowImpl, _extends({}, this.props, {
 	        offsetTop: undefined,
 	        zIndex: undefined

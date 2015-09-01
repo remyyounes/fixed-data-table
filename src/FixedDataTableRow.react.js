@@ -248,7 +248,11 @@ var FixedDataTableRow = React.createClass({
     return (
       <div
         style={style}
-        className={cx('fixedDataTableRowLayout/rowWrapper')}>
+        className={
+          joinClasses(
+            cx('fixedDataTableRowLayout/rowWrapper'),
+            this.props.className
+          )}>
         <FixedDataTableRowImpl
           {...this.props}
           offsetTop={undefined}
